@@ -21,10 +21,8 @@ Databases are arranged as [tables]({{ site.github.url }}/reference.html#table).
 Each table has columns (also known as [fields]({{ site.github.url }}/reference.html#fields)) that describe the data,
 and rows (also known as [records]({{ site.github.url }}/reference.html#record)) which contain the data.
 
-When we are using a spreadsheet,
-we put formulas into cells to calculate new values based on old ones.
-When we are using a database,
-we send commands
+When we are using a spreadsheet, we put formulas into cells to calculate new values based on old ones.
+When we are using a database, we send commands
 (usually called [queries]({{ site.github.url }}/reference.html#query))
 to a [database engine]({{ site.github.url }}/reference.html#database-manager):
 a program that manipulates the database for us.
@@ -35,8 +33,7 @@ that we can then use as a starting point for further queries.
 Queries are written in a language called [SQL]({{ site.github.url }}/reference.html#sql),
 which stands for "Structured Query Language".
 SQL provides hundreds of different ways to analyze and recombine data.
-We will only look at a handful of queries,
-but that handful accounts for most of what scientists do.
+We will only look at a handful of queries, but that handful accounts for most of what scientists do.
 
 > ## Changing Database Engines
 >
@@ -211,8 +208,7 @@ we'll return to these missing values [later]({{ site.github.url }}/05-null/).
 > Note: The available data types vary based on the database engine - you can search online for what data types are supported.
 >
 > You can change some SQLite settings to make the output easier to read.
-> First,
-> set the output mode to display left-aligned columns.
+> First, set the output mode to display left-aligned columns.
 > Then turn on the display of column headers.
 >
 > ~~~
@@ -225,8 +221,7 @@ we'll return to these missing values [later]({{ site.github.url }}/05-null/).
 > you can use either `.quit` or `.exit`.
 {: .callout}
 
-For now,
-let's write an SQL query that displays scientists' names.
+For now, let's write an SQL query that displays scientists' names.
 We do this using the SQL command `SELECT`,
 giving it the names of the columns we want and the table we want them from.
 Our query and its output look like this:
@@ -247,9 +242,7 @@ SELECT family, personal FROM Person;
 The semicolon at the end of the query
 tells the database engine that the query is complete and ready to run.
 We have written our commands in upper case and the names for the table and columns
-in lower case,
-but we don't have to:
-as the example below shows,
+in lower case, but we don't have to: as the example below shows,
 SQL is [case insensitive]({{ site.github.url }}/reference.html#case-insensitive).
 
 ~~~
@@ -293,13 +286,11 @@ This is SQL's prompt, where it is waiting for additional commands or
 for a `;` to let SQL know to finish.  This is easy to fix!  Just type
 `;` and press enter!
 
-Now, going back to our query,
-it's important to understand that
+Now, going back to our query, it's important to understand that
 the rows and columns in a database table aren't actually stored in any particular order.
 They will always be *displayed* in some order,
 but we can control that in various ways.
-For example,
-we could swap the columns in the output by writing our query as:
+For example, we could swap the columns in the output by writing our query as:
 
 ~~~
 SELECT personal, family FROM Person;
