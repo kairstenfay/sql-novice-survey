@@ -328,7 +328,7 @@ SELECT * FROM Person;
 
 > ## Understanding CREATE statements
 >
-> Use the `.schema` to identify column that contains integers.
+> Use the `.schema` to identify columns that contains integers.
 >
 > > ## Solution
 > >
