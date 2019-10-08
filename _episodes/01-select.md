@@ -35,6 +35,9 @@ which stands for "Structured Query Language".
 SQL provides hundreds of different ways to analyze and recombine data.
 We will only look at a handful of queries, but that handful accounts for most of what scientists do.
 
+During this lesson, we will be using the [SQLite database engine](https://www.sqlite.org/index.html).
+While SQLite is not as scalable as other database engines, it is fast and reliable, making it the [most used database engine in the world](https://www.sqlite.org/mostdeployed.html).
+
 > ## Changing Database Engines
 >
 > Many database engines --- Oracle,
