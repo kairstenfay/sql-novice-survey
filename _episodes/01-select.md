@@ -192,7 +192,7 @@ The output is formatted as <**columnName** *dataType*>.  Thus we can see from th
 * **personal** with type _text_
 * **family** with type _text_
 
-Note: The available data types vary based on the database engine - you can search online for what data types are supported.
+> Note: The available data types vary based on the database engine - you can search online for what data types are supported.
 
 ## SQLite options
 
